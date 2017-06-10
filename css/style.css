@@ -542,12 +542,17 @@ i.fa.fa-sort-down {
 
 #main-right-nav a{
   margin-right: 10px;
+  color: rgba(189, 186, 186, 0.57);
 }
 
 ul#main-center-nav {
     text-align: center;
     width: 12%;
     margin: 0 auto;
+}
+
+ul#main-center-nav a{
+    color: rgba(189, 186, 186, 0.57);
 }
 
 /****** Header Slider *********/
@@ -567,13 +572,19 @@ ul#main-center-nav {
 
 .slides-image {
     float: left;
-    width: 50%;
-    height: 383px;
+    width: 33%;
+    height: 410px;
+    /* margin: 0 auto; */
+    position: relative;
+    top: 84px;
+    left: 160px;
 }
 
-.slides-image img{
-  max-width: 100%;
-  max-height: 100%;
+.slides-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /* Caption text */
@@ -753,7 +764,6 @@ ul#main-center-nav {
 
 .view-more {
     border-radius: 6px;
-    background-color: green;
     margin: 0 auto;
     width: 366px;
     height: 75px;
@@ -870,6 +880,10 @@ i.fa.fa-heart {
     height: 351px;
 }
 
+.delivery-wraper {
+    margin-left: 2.4em;
+}
+
 .delivery-item{
   float: left;
   width: 30%;
@@ -903,13 +917,233 @@ i.fa.fa-heart {
 }
 
 footer {
-    background: yellow;
+    background: #fff;
     padding: 50px;
     height: 670px;
 }
-.footer{
+.footer {
   float: left;
+   
+    width: 15%;
+    margin-left: 1.6em;
 }
+.footer h3{
+  position: relative;
+  left: 38px;
+}
+
+.sport {
+    margin-top: 50px;
+}
+
 .footer ul{
   list-style-type: none;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: rgba(44, 62, 80, 0.7);
+}
+.social ul li{
+  display: inline;
+}
+.item-text a{
+  text-decoration: none;
+  color:  rgba(44, 62, 80, 0.7);
+}
+.products-item-text a{
+  text-decoration: none;
+  color:  rgba(44, 62, 80, 0.7);
+}
+.item-text p{
+  color: #bdc3c7;
+}
+.product-item-text p{
+  color: #bdc3c7;
+}
+
+/* ********** CATEGORIES PAGE *************** */
+
+.categories-main-header{
+   background: #fff;
+    height: 79px;
+}
+
+.categories-main-nav{
+    height: 79px;
+    border-bottom: 1px solid rgb(189, 195, 199);
+
+}
+#categories-main-logo {
+    width: 13%;
+    float: left;
+    text-align: center;
+}
+#categories-main-logo h1{
+  color:  #816fca;
+  font-size: 2em;
+    margin: 0.67em 0;
+    text-transform: uppercase;
+}
+.categories-main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: inherit;
+}
+.categories-main-nav ul li{
+    display: inline;
+}
+
+.categories-main-nav a{
+  color: #45413e;
+}
+
+#all-categories{
+  background: #f2eeeb;
+  padding: 50px;
+  height: 129rem;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    
+    font-size: 17px;
+    text-align: center;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #816fca;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    
+    text-decoration: underline;
+}
+
+.categories-heading h1 {
+    text-transform: uppercase;
+    color: #45413e;
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 2.5em;
+    position: relative;
+    right: 312px;
+}
+
+.right-line {
+    float: right;
+    width: 35%;
+    border-bottom: 1px solid #e5e2df;
+    position: relative;
+    top: -45px;
+    /* right: 255px; */
+    /* right: 570px; */
+}
+
+.left-line {
+    width: 36%;
+    border-bottom: 1px solid #e5e2df;
+    /* margin-top: 51px; */
+    position: relative;
+    top: 28px;
+    float: left;
+}
+
+.categories-flex {
+   background: #fff;
+   border-radius: 6px;
+    margin-bottom: 45px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  height: 0;
+
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+.first-item {
+   
+    border-radius: 6px 0px 0px 6px;
+    width: 37rem;
+    height: 13rem;
+}
+.first-item h2{
+  color: rgba(44, 62, 80, 0.7);
+  text-transform: uppercase;
+}
+.category-item {
+    width: 19rem;
+    height: 13rem;
+}
+.category-item img{
+   max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.category-item:last-child img {
+    
+    border-radius: 20px;
+}
+
+.category-item-wraper {
+    margin: 23px 10px 0px 30px;
+    
+    padding: 16px;
+}
+
+.category-link-wraper a {
+    text-decoration: none;
+    color: #fff;
+    background: #816fca;
+    padding: 10px 27px;
+    border-radius: 21px;
+}
+.category-link-wraper {
+    margin-top: 45px;
+}
+
+.category-more {
+    text-align: center;
+    position: relative;
+    bottom: -26px;
+    padding: 20px;
+}
+
+.category-more a {
+    text-decoration: none;
+    color: #fff;
+    background: #816fca;
+    padding: 20px 100px;
+    border-radius: 6px 6px 0px 0px;
 }
