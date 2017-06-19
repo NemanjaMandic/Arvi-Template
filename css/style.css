@@ -1136,7 +1136,7 @@ ul.breadcrumb li a:hover {
 .category-more {
     text-align: center;
     position: relative;
-    bottom: -26px;
+    bottom: -23px;
     padding: 20px;
 }
 
@@ -1153,7 +1153,7 @@ ul.breadcrumb li a:hover {
 #product-page{
   background: #f2eeeb;
   padding: 50px;
-  height: 129rem;
+  height: 113rem;
 }
 .product-left-line{
     width: 24%;
@@ -1182,6 +1182,7 @@ ul.breadcrumb li a:hover {
 
 .product-wraper{
   background: #fff;
+  padding-bottom: 2rem;
 }
 
 .product-image {
@@ -1217,18 +1218,33 @@ ul.breadcrumb li a:hover {
 
 .product-content {
     float: left;
-    background: red;
     width: 34%;
-    padding: 20px;
+    padding: 0px 30px;
     margin-top: 23px;
-    text-align: c;
+}
+.product-content h2{
+  font-size: 2.5rem;
+  color: #45413e;
+}
+
+.product-text {
+    clear: both;
+    color: #45413e;
+    font-family: Quicksand;
+    padding-top: 15px;
+}
+.readmore{
+  text-decoration: none;
+  color: #816fca;
 }
 .container {
-   
+    padding: 3px;
+    width: 166px;
+    float: left;
 }
 .count-input input {
-    width: 63%;
-    height: 36.92307692px;
+    width: 67%;
+    height: 38.923077px;
     border: 1px solid #000;
     border-radius: 18px;
     background: none;
@@ -1247,7 +1263,7 @@ ul.breadcrumb li a:hover {
     text-align: center;
     line-height: 30px;
     top: 46%;
-    right: 60px;
+    right: 48px;
     margin-top: -15px;
     text-decoration: none;
 }
@@ -1288,6 +1304,7 @@ ul.breadcrumb li a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-bottom: 13px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -1313,3 +1330,243 @@ ul.breadcrumb li a:hover {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.add-to-cart-btn {
+    
+    padding: 3px;
+    position: relative;
+    top: 8px;
+    width: 200px;
+    float: left;
+}
+
+.add-to-cart-btn input[type="submit"] {
+    background: #816fca;
+    border-radius: 17px;
+    border: 0;
+    width: 145px;
+    height: 44px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social-product ul{
+  padding: 0;
+}
+.social-product ul li{
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-product ul li a{
+  color: #45413e;
+
+}
+.share{
+ font-family: Quicksand;
+ color:  #45413e;
+}
+
+#tab-container{
+  clear: both;
+}
+
+#tab-container {
+    margin: 0 auto;
+    width: 75%;  /* Ancho del contenedor */
+   
+}
+.product-space {
+    margin-bottom: 37rem;
+    
+}
+
+#tab-container input {
+	height: 2.5em;
+	visibility: hidden;
+}
+
+#tab-container label {
+    background: #fff;
+    border-radius: 1.25em 1.25em 0 0;
+    color: rgb(189, 195, 199);
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 1.3em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border-bottom: 2px solid #e8e2d6;
+    width: 17rem;
+    position: relative;
+    right: 18rem;
+}
+
+#tab-container input:hover + label {
+
+	color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+}
+
+#tab-container input:checked + label {
+    /* background: #f1f1f1; */
+    color: #444;
+    position: relative;
+    z-index: 6;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    -ms-transition: .1s;
+    transition: .1s;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #e8e2d6;
+
+    border-top: 2px solid #e8e2d6;
+    border-left: 2px solid #e8e2d6;
+}
+
+#content {
+    background: #fff;
+    min-height: 20em;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    border-top: 2px solid #e8e2d6;
+    top: 6px;
+}
+
+#content div {
+	opacity: 0;
+	padding: 1.5em;
+	position: absolute;
+	z-index: -100;
+	/*
+	transition: all linear 0.1s;
+	*/
+}
+
+#content-1 p {
+	clear: both;
+	margin-bottom: 1em;
+}
+#content-1 p.left img {
+	float: left;
+	margin-right: 1em;
+}
+#content-1 p.last {
+	margin-bottom: 0;
+}
+
+#content-2 p {
+	float: left;
+	width: 48.5%;
+}
+#content-2 p.column-right {
+	margin-left: 3%;
+}
+#content-2 p img {
+	display: block;
+	margin: 0 auto 1em auto;
+}
+#content-3 p,
+#content-3 ul {
+	margin-bottom: 1em;
+}
+#content-3 ul {
+	margin-left: 2em;
+}
+
+#tab-container input#tab-1:checked ~ #content #content-1,
+#tab-container input#tab-2:checked ~ #content #content-2,
+#tab-container input#tab-3:checked ~ #content #content-3 {
+    opacity: 1;
+    z-index: 100;
+}
+
+input.visible {
+  visibility: visible !important;
+}
+
+.product-popularwraper {
+    display: flex;
+    height: 30rem;
+}
+
+.popular-item {
+      border-radius: 6px;
+    background-color: #fff;
+    width: 26rem;
+    height: 26rem;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.popular-item + .popular-item {
+    margin-left: 3rem;
+}
+
+.popular-item > img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 75%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.popular-item-text{
+   padding: 0px 26px;
+}
+   
+.popular-item-text > .product-title{
+    font-size: 1em;
+    color: #45413e;
+    font-family: QuicksandBold;
+}
+
+.popular-item-text > .product-price{
+      color: #bdc3c7;
+      font-size: 0.9em;
+}
+
+.popular-heading {
+    text-align: center;
+}
+
+.popular-heading > h2{
+    text-transform: uppercase;
+    color: #45413e;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+
+.fancy span:before,
+.fancy span:after {
+ content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #e5e2df;
+    top: 0;
+    width: 50rem;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* *************** ABOUT PAGE *********************** */
+#about-page{
+   background: #f2eeeb;
+  padding: 50px;
+}

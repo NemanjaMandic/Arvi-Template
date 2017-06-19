@@ -11,7 +11,98 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+	/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
 </head>
 
 <body>
@@ -38,9 +129,9 @@
 		</div><!-- position-nav -->
 	   </div><!-- main-nav-wrap -->
 	</nav>
-	
+
 </header>
-<section id="product-page">
+<section id="about-page">
 	<ul class="breadcrumb">
 	  <li><a href="#">Home</a></li>
 	  <li><a href="#">Shopping Cart</a></li>
@@ -51,102 +142,37 @@
        <h1>Archi Desk Accessories Pen Cup</h1>
        	<span class="product-right-line"></span>
     </div>
+    </section>
     <div class="product-wraper clearfix">
-    	<div class="product-space">
-        <div class="product-image">
-            <img src="img/suit.png">
-        </div>
-        <div class="product-thumb-wraper">
-            <div class="product-thumbnail">
-                OVDE IDE THUMB
-            </div>
-            <div class="product-thumbnail">
-                OVDE IDE THUMB
-            </div>
-            <div class="product-thumbnail">
-                OVDE IDE THUMB
-            </div>
-            <div class="product-thumbnail">
-                OVDE IDE THUMB
-            </div>
-            <div class="product-thumbnail">
-                OVDE IDE THUMB
-            </div>
-        </div>
-        <div class="product-content">
-            <h2>$299.99</h2>
-            <div class="dropdown">
-			  <button id="dropBtn" class="dropbtn">Dropdown</button>
-			  <div id="myDropdown" class="dropdown-content">
-			    <a href="#">Link 1</a>
-			    <a href="#">Link 2</a>
-			    <a href="#">Link 3</a>
-			  </div>
-			</div>
-            <form method="post" action="">
-			    <div class="container">
-					<div class="count-input space-bottom">
-				         <a class="incr-btn" data-action="decrease" href="#">–</a>
-				         <input class="quantity" type="text" name="quantity" value="1"/>
-				         <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-				    </div>
-				    
-				</div>
-				 <div class="add-to-cart-btn">
-			       <input type="submit" value="ADD TO CART" id="submit">
-			     </div>
-			   
-			</form>
-			<div class="product-text">
-	            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-	            totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo.?</p>
-            </div>
-            <a class="readmore" href="#">Read More</a>
-            <div class="social-product">
-				<ul>
-					<li class="share">Share</li>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-				</ul>
-			</div>
-        </div>
-        </div><!--product-space-->
-        	<div id="tab-container">
-
-			    <input id="tab-1" type="radio" name="tab-group" checked="checked" />
-			    <label for="tab-1">Description</label>
-			    <!--Pestaña 2 inactiva por defecto-->
-			    <input id="tab-2" type="radio" name="tab-group" />
-			    <label for="tab-2">Additional Information</label>
-			    <!--Pestaña 3 inactiva por defecto-->
-			    <input id="tab-3" type="radio" name="tab-group" />
-			    <label for="tab-3"> Reviews (3)</label>
-		   
-		    <div id="content">
-		    	<!--Contenido de la Pestaña 1-->
-		        <div id="content-1">
-		            <p class="left"><img src="http://ximg.es/160x120" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit reprehenderit iusto harum minima. Assumenda, accusamus, perspiciatis inventore tempora qui pariatur quisquam? Deleniti, placeat ea nostrum officiis obcaecati temporibus quod. Ullam, in, adipisci autem at fugit ab tempore enim ratione nesciunt alias corporis vitae quo quod nostrum itaque vero iure?</p>
-		            <p class="left last"><img src="http://ximg.es/160x120" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, id blanditiis deserunt in molestiae excepturi incidunt molestias dolor sunt dolore obcaecati non repellat mollitia error placeat est exercitationem sit voluptates iure autem saepe voluptas harum unde perferendis modi provident labore voluptatum. Repudiandae, aspernatur sit harum quod vero quos sequi voluptas!</p>
-		        </div>
-		        <!--Contenido de la Pestaña 2-->
-		        <div id="content-2">
-		            <p class="column-left"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, est, nisi enim voluptates dicta quibusdam recusandae eveniet provident non at nostrum nesciunt laudantium omnis aliquam debitis magni expedita cumque tempore.</p>
-	            	<p class="column-right"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestiae, officia repellendus quasi cumque dolor eius deserunt possimus aliquid neque nam assumenda veniam soluta enim commodi aperiam reprehenderit quia incidunt.</p>
-		        </div>
-		        <!--Contenido de la Pestaña 3-->
-		        <div id="content-3">
-		        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-		        	<ul>
-		        		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-		        		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-		        		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-		        	</ul>
-		        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
-		        </div>
-		    </div>
-		</div><!--tab-container-->
+    	<div class="slideshow-container">
+	  <div class="mySlides fade">
+	    <div class="numbertext">1 / 3</div>
+	    <img src="img1.jpg" style="width:100%">
+	    <div class="text">Caption Text</div>
+	  </div>
+	
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 3</div>
+	    <img src="img2.jpg" style="width:100%">
+	    <div class="text">Caption Two</div>
+	  </div>
+	
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 3</div>
+	    <img src="img3.jpg" style="width:100%">
+	    <div class="text">Caption Three</div>
+	  </div>
+	
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
 
     </div>
    <div class="product-popular-item">
@@ -189,7 +215,7 @@
     <div class="category-more">
     	<a href="#">VIEW MORE</a>
     </div>
-</section>
+
 <section class="delivery-section">
 	<div class="delivery-wraper">
 	<div class="delivery-item free-delivery">
