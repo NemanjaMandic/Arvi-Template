@@ -1570,3 +1570,257 @@ input.visible {
    background: #f2eeeb;
   padding: 50px;
 }
+
+.about{
+  background: red;
+}
+
+	/* Slideshow container */
+.about-main-slideshow-container {
+  max-width: 100%;
+    position: relative;
+    margin: auto;
+    background: green;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.about-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-text > h2{
+  
+  color:  #ffffff;
+  font-size: 3em;/* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 0.625;/* Approximation due to font substitution */
+  text-align: center;
+}
+.about-text > p{
+   width: 70%;
+  margin: 0 auto;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.fancy-about {
+    line-height: 0.1;
+    text-align: center;
+}
+.fancy-about span {
+    display: inline-block;
+    position: relative;
+}
+.fancy-about span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy-about span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.fancy-about span:before, .fancy-about span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #e5e2df;
+    top: 0;
+    width: 50rem;
+}
+
+.about-heading{
+	text-align: center;
+}
+.about-heading > h1{
+
+   color:  #45413e;
+}
+
+.about-main-slideshow-wraper {
+    background: aqua;
+    /* padding: 11px; */
+    height: 30rem;
+}
+
+/* ******* PURCHASE ***************** */
+.purchase{
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  height: 23rem;
+}
+
+.purchase-wraper{
+  display: flex;
+}
+.purchase-text{
+  padding-right: 10rem;
+}
+.purchase-text > h2{
+  color:  #45413e;
+  text-transform: uppercase;
+  font-size: 1.875em;
+}
+
+.purchase-btn {
+    padding-top: 5rem;
+}
+
+.purchase-btn > a {
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #816fca;
+    border-radius: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.business-container{
+  display: flex;
+  background: red;
+   height: 13rem;
+   position: relative;
+    top: 4rem;
+}
+
+.business-item{
+  text-align: center;
+  border: 1px solid;
+  width: 100%;  /* Or whatever */
+  height: 100%; /* Or whatever */
+  margin: auto; 
+  background: orange;
+}
+
+/* ************* INTRODUCTION *********************** */
+
+.introduction{
+  background: #f2f2f2;
+  height: 45rem;
+  padding: 50px;
+}
+
+.introduction-wraper {
+    background: #fff;
+    height: 400px;
+    margin-top: 8rem;
+}
+
+.about-mask {
+    background: #816fca;
+    height: 15rem;
+    position: relative;
+    top: -55px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-mask:hover{
+  opacity: 1;
+}
+
+.about-mask-content > h2 {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+
+.about-mask-content {
+   
+    padding: -2px;
+    position: relative;
+    top: 78px;
+}
+
+.about-mask-content > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 24px;
+    border: 1px solid;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+

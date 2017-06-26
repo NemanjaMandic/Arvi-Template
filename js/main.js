@@ -19,6 +19,4 @@ function showSlides() {
     setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
 
-window.onload=function(){
-    alert('Hello World!');
-}
+
