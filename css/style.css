@@ -2069,3 +2069,237 @@ input.visible {
   background: -ms-linear-gradient(90deg, #dc5987 0%, #675b99 100%);
   background: linear-gradient(0deg, #dc5987 0%, #675b99 100%);
 }
+
+.clients-say-header {
+    text-align: center;
+}
+
+.clients-say-header > h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.client-img-wraper {
+   float: left;
+}
+.client-img{
+   width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    float: left;
+}
+.myClientSlides {
+    display: none;
+}
+
+.clientDot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.clientFade {
+  -webkit-animation-name: clientFade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: clientFade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes clientFade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes clientFade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.client-data > p {
+    color: #c4c4c4;
+}
+
+
+.client-data > h3 {
+    color: #fff;
+}
+
+.client-logo-container {
+    clear: both;
+    display: flex;
+    height: 17vh;
+    margin-top: 6rem;
+}
+.logo-item {
+    
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.clients-text {
+	position: relative;
+	 float: left;
+    width: 70%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+	background: #f514d7;
+	border: 4px solid #ffffff;
+}
+.clients-text:after, .clients-text:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.clients-text:after {
+	border-color: rgba(245, 20, 215, 0);
+	border-right-color: rgba(107, 29, 90, 0.69);
+	border-width: 16px;
+	margin-top: -16px;
+}
+.clients-text:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 20px;
+    margin-top: -20px;
+}
+
+.clients-slideshow-container {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* padding: 41px; */
+}
+
+.client-img {
+    width: 135px;
+    height: 135px;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    margin-bottom: 1.2rem;
+}
+
+.client-data {
+    text-align: center;
+}
+
+.client-data > h3 {
+    font-size: 1.3rem;
+}
+
+.clients-text {
+    position: relative;
+    float: left;
+    width: 66%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    background: -webkit-linear-gradient(90deg, #dc5987 0%, #675b99 100%);
+    background: -moz-linear-gradient(90deg, #dc5987 0%, #675b99 100%);
+    background: -o-linear-gradient(90deg, #dc5987 0%, #675b99 100%);
+    background: -ms-linear-gradient(90deg, #dc5987 0%, #675b99 100%);
+    background: linear-gradient(0deg, #dc5987 0%, #675b99 100%);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    padding: 10px 61px;
+    color: #fff;
+}
+
+.client-dots {
+    text-align: center;
+    clear: both;
+    position: relative;
+    top: -65px;
+    right: 459px;
+   
+    width: 10em;
+    float: right;
+}
+
+@media screen and (max-width: 1866px) {
+    
+    .fancy-about span:before, .fancy-about span:after {
+   
+      width: 31rem;
+   }
+   #categories-main-logo h1 {
+   
+    font-size: 1em;
+  
+ }
+ 
+ ul#main-center-nav {
+   
+    width: auto;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i.fa.fa-sort-down {
+    margin-left: 5px;
+    
+ }
+}
+
+@media screen and (max-width: 1345px) {
+   
+ 
+ul#main-center-nav {
+    width: auto;
+    margin: 0 auto;
+    /* margin-left: auto; */
+    /* margin-right: 3rem; */
+    /* float: left; */
+    width: 26em;
+}
+
+#categories-main-logo {
+   
+    margin-top: 1em;
+}
+}
+
+@media screen and (max-width: 1135px){
+  .categories-main-nav{
+    background: red;
+  }
+  .fancy-about span:before, .fancy-about span:after {
+    width: 15rem;
+}
+
+.member-text-underline {
+    left: 475px;
+   
+}
+}
+
+@media screen and (max-width: 640px){
+  .categories-main-nav{
+    background: green;
+  }
+  
+.purchase-wraper {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .purchase-text {
+    padding-right: 2rem;
+}
+.purchase-btn {
+    padding-top: 2rem;
+}
+}
